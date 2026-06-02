@@ -17,4 +17,4 @@ O **Nexus Convert BR** é uma plataforma inovadora focada em desenvolvimento de 
 
 
 ---
-*Nexus Convert BR - Código Puro, Conversões Reais.*
+*Nexus Convert BR - Engenharia de Landing Pages de Alta Conversão.*
