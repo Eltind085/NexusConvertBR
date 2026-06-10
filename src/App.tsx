@@ -4,7 +4,6 @@ import AuthorityMarquee from "./components/AuthorityMarquee";
 import BentoGrid from "./components/BentoGrid";
 import ServicesAndNiches from "./components/ServicesAndNiches";
 import PortfolioGallery from "./components/PortfolioGallery";
-import InteractiveCalculator from "./components/InteractiveCalculator";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
@@ -21,7 +20,6 @@ export default function App() {
         <BentoGrid />
         <ServicesAndNiches />
         <PortfolioGallery />
-        <InteractiveCalculator />
         <Testimonials />
         <FAQ />
       </main>

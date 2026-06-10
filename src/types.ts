@@ -37,5 +37,6 @@ export interface PortfolioItem {
   imageUrl: string;
   highlights: string[];
   features: string[];
+  projectUrl?: string;
 }
 

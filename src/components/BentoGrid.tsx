@@ -25,13 +25,13 @@ export default function BentoGrid() {
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto mb-20 scroll-mt-24">
           <span className="text-[11px] font-mono tracking-[0.25em] text-brand-cyan uppercase font-bold bg-white/5 border border-white/10 px-4 py-1.5 rounded-full">
-            DIFERENCIAIS DA LANDING PAGE PREMIUM
+            AUTOMAÇÃO E VENDAS
           </span>
           <h2 className="mt-6 font-display font-bold text-3xl sm:text-5xl text-white tracking-tight leading-tight">
-            Engenharia de Conversão para <span className="text-brand-green">Alavancar seu Negócio</span>
+            Engenharia de Conversão para <span className="text-brand-green">Multiplicar seu Faturamento</span>
           </h2>
           <p className="mt-4 text-base text-gray-400">
-            Diga adeus a sites lentos ou plataformas genéricas que travam. Entregamos a estrutura focada na conversão rápida do seu cliente.
+            Diga adeus a clientes que perguntam o preço e somem. Entregamos uma máquina de vendas pronta para agendar os seus serviços automaticamente.
           </p>
         </div>
 
@@ -56,13 +56,13 @@ export default function BentoGrid() {
                 <Zap className="w-6 h-6" />
               </div>
               <span className="text-[10px] font-mono tracking-widest text-brand-cyan uppercase font-bold">
-                MÁXIMA VELOCIDADE E CONVERSÃO
+                MÁQUINA DE ATRAIR CLIENTES
               </span>
               <h3 className="mt-3 font-display font-bold text-2xl sm:text-3xl text-white tracking-tight">
-                Estrutura de Alto Valor e Velocidade Real
+                Pare de Perder Dinheiro com Anúncios Ruins
               </h3>
               <p className="mt-3 text-sm text-gray-400 max-w-lg leading-relaxed">
-                Páginas ultra-rápidas que abrem em menos de 1 segundo. Garanta que seus clientes não desistam do contato pela demora de carregamento no celular.
+                Quando sua estrutura demora a carregar, o cliente desiste e vai para o concorrente. Nossas páginas abrem instantaneamente, garantindo aproveitamento máximo de cada centavo que você investe.
               </p>
             </div>
 
@@ -93,14 +93,14 @@ export default function BentoGrid() {
                 <Clock className="w-5 h-5" />
               </div>
               <h4 className="font-display font-semibold text-lg text-white">
-                Agendamento Facilitado
+                Sua Agenda Automática
               </h4>
               <p className="mt-2 text-xs text-gray-400 leading-relaxed">
-                Botões diretos para o WhatsApp ou seu sistema atual, encurtando o caminho para o paciente marcar a consulta.
+                O cliente encontra você, confere seus horários livres e faz a marcação sozinho 24 horas por dia.
               </p>
             </div>
             <div className="font-mono text-[10px] text-brand-green font-semibold mt-4">
-              Menos Cliques • Mais Agendamentos
+              Menos Mensagens • Mais Dinheiro
             </div>
           </motion.div>
 
@@ -114,14 +114,14 @@ export default function BentoGrid() {
                 <Palette className="w-5 h-5" />
               </div>
               <h4 className="font-display font-semibold text-lg text-white">
-                Identidade Premium
+                Autoridade Imediata
               </h4>
               <p className="mt-2 text-xs text-gray-400 leading-relaxed">
-                Design refinado que fortalece sua autoridade, justificando o alto valor que você cobra pelo seu serviço.
+                Design refinado que gera tanta credibilidade que o cliente para de pedir desconto e aceita o seu valor.
               </p>
             </div>
             <div className="font-mono text-[10px] text-brand-cyan font-semibold mt-4">
-              Design Focado em Tickets Elevados
+              Eleve seu Posicionamento
             </div>
           </motion.div>
 
@@ -135,14 +135,14 @@ export default function BentoGrid() {
                 <Award className="w-5 h-5" />
               </div>
               <h4 className="font-display font-semibold text-lg text-white">
-                Textos que Vendem
+                Textos que Convencem
               </h4>
               <p className="mt-2 text-xs text-gray-400 leading-relaxed">
-                Usamos roteiros persuasivos. Criamos desejo, removemos objeções e forçamos o cliente a querer entrar em contato.
+                Roteiros persuasivos (copy) desenhados para despertar desejo e eliminar as dúvidas freqüentes do seu cliente.
               </p>
             </div>
             <div className="font-mono text-[10px] text-violet-400 font-semibold mt-4">
-              Copys • Gatilhos Mentais
+              Gatilhos Mentais • Urgência
             </div>
           </motion.div>
 
@@ -156,14 +156,14 @@ export default function BentoGrid() {
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h4 className="font-display font-semibold text-lg text-white">
-                Hospedagem Blindada
+                Filtro de Qualificação
               </h4>
               <p className="mt-2 text-xs text-gray-400 leading-relaxed">
-                Sem quedas ou telas em branco. Sua estrutura rodando 100% online, recepcionando as campanhas que você já investiu em tráfego.
+                Eliminamos curiosos: formulários inteligentes garantem que só chegue até você quem tem potencial de fechar negócio.
               </p>
             </div>
             <div className="font-mono text-[10px] text-brand-green font-semibold mt-4">
-              Site Estável • 24 Horas
+              Apenas Clientes Prontos
             </div>
           </motion.div>
 
@@ -177,14 +177,14 @@ export default function BentoGrid() {
                 <Sparkles className="w-5 h-5" />
               </div>
               <h4 className="font-display font-semibold text-lg text-white">
-                Perfeito para Celular
+                Feito para o Celular
               </h4>
               <p className="mt-2 text-xs text-gray-400 leading-relaxed">
-                Criamos para a tela do smartphone primeiro, com navegação natural que direciona direto pro botão de contato final.
+                90% dos seus clientes te encontram pelo celular. Entregamos a experiência perfeita e rápida para o dedão do usuário.
               </p>
             </div>
             <div className="font-mono text-[10px] text-brand-cyan font-semibold mt-4">
-              90% dos Leads vêm do Mobile
+              Otimização Mobile-First
             </div>
           </motion.div>
         </motion.div>

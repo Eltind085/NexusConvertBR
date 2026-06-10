@@ -302,21 +302,34 @@ export default function PortfolioGallery() {
                   </div>
 
                   {/* Dynamic CTA */}
-                  <div className="pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center gap-4">
-                    <a
-                      href="https://wa.me/5585920015464?text=Olá,%20vi%20o%20caso%20no%20portfólio%20e%20gostaria%20de%20uma%20estrutura%20de%20conversão%20para%20meu%20negócio"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full sm:w-auto relative group inline-flex items-center justify-center px-6 py-3 font-display font-bold uppercase tracking-wider text-[11px] rounded-full bg-brand-green text-brand-dark transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(57,255,20,0.3)] cursor-pointer"
-                    >
-                      Quero uma Estrutura Como Esta <ArrowUpRight className="w-3.5 h-3.5 ml-1.5" />
-                    </a>
-                    
+                  <div className="pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+                      <a
+                        href="https://wa.me/5585920015464?text=Olá,%20vi%20o%20caso%20no%20portfólio%20e%20gostaria%20de%20uma%20estrutura%20de%20conversão%20para%20meu%20negócio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:w-auto relative group inline-flex items-center justify-center px-6 py-3 font-display font-bold uppercase tracking-wider text-[11px] rounded-full bg-brand-green text-brand-dark transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(57,255,20,0.3)] cursor-pointer"
+                      >
+                        Quero uma Estrutura Como Esta <ArrowUpRight className="w-3.5 h-3.5 ml-1.5" />
+                      </a>
+                      
+                      {selectedItem.projectUrl && (
+                        <a
+                          href={selectedItem.projectUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full sm:w-auto px-6 py-3 border border-brand-cyan/30 text-brand-cyan hover:text-white hover:border-brand-cyan hover:bg-brand-cyan/10 rounded-full transition text-[11px] font-mono font-bold uppercase tracking-wider cursor-pointer text-center"
+                        >
+                          Acessar Site Ao Vivo
+                        </a>
+                      )}
+                    </div>
+
                     <button
                       onClick={handleCloseModal}
                       className="w-full sm:w-auto px-6 py-3 border border-white/10 text-gray-400 hover:text-white hover:bg-white/5 rounded-full transition text-[11px] font-mono uppercase tracking-wider cursor-pointer text-center"
                     >
-                      Voltar ao Painel
+                      Voltar
                     </button>
                   </div>
 

@@ -9,28 +9,28 @@ interface FAQItem {
 
 const FAQS: FAQItem[] = [
   {
-    question: "O que exatamente está incluso no serviço?",
-    answer: "Está incluso o estudo estratégico do seu público-alvo local, copywriting persuasivo de alta conversão, design customizado alinhado à sua marca, imagens profissionais em altíssima qualidade, estruturação de SEO básico local para o Google, integração rápida com WhatsApp, formulários de contato inteligentes de triagem e configuração do seu domínio próprio de forma profissional."
+    question: "Afinal, o que é uma 'Landing Page' (Página de Vendas)?",
+    answer: "É um site de uma página só, direto ao ponto. Sites antigos têm muitas abas e o cliente acaba se perdendo. A nossa página é feita exclusivamente para uma coisa: convencer o seu visitante a clicar no botão de WhatsApp ou agendar um serviço com você. Sem distrações, gerando muito mais clientes reais."
   },
   {
-    question: "Eu terei de pagar alguma taxa ou mensalidade perpétua para terceiros?",
-    answer: "Não! Diferente das agências tradicionais que forçam você a hospedar em servidores WordPress lentos cobrando R$ 50-R$ 100 por mês, nós utilizamos infraestrutura estática moderna (CDNs). A hospedagem básica do seu site pode sair totalmente gratuita ou custar centavos por ano, dependendo do volume. Você só paga pela aquisição anual do seu domínio (.com.br) diretamente ao Registro.br."
+    question: "Como funciona a Agenda de Horários no site?",
+    answer: "Se você atende por horário (clínicas, estética, consultas, etc), nós embutimos uma agenda inteligente no seu site. O próprio cliente entra, escolhe o serviço, vê os dias e horários que você tem livre, e faz a marcação sozinho 24 horas por dia. Você não precisa ficar o dia inteiro respondendo mensagens para tentar marcar um horário."
   },
   {
-    question: "Por que uma página em código puro é melhor que WordPress ou Wix?",
-    answer: "Pelo tripé de sucesso: Velocidade, Segurança e Custo. Sites construídos com Elementor ou Wix demoram 4-10 segundos para carregar no celular do cliente em conexões 4G, fazendo você perder até 50% do seu dinheiro investido em anúncios. Nosso código limpo abre em menos de 0.5 segundo, é 100% livre de invasões e hacks de plugins ultrapassados, e roda sem mensalidades pesadas."
+    question: "O cliente pode pagar direto pelo site na hora de agendar?",
+    answer: "Sim! Você é quem manda. Podemos deixar para ele apenas reservar a data e pagar pessoalmente, ou exigir que ele faça um pagamento online (como um sinal, ou valor total) no ato da marcação. É a melhor forma de acabar de vez com os cancelamentos e faltas de última hora."
   },
   {
-    question: "O código-fonte será de minha propriedade?",
-    answer: "Sim, absolutamente sem letras miúdas. Todo o arquivo da página é de propriedade integral sua. Nós entregamos a estrutura completa com as chaves de acesso definitivo do seu patrimônio digital diretamente ao seu domínio, de forma totalmente independente e segura."
+    question: "Eu não entendo de tecnologia, vou conseguir usar?",
+    answer: "Com toda a certeza! Nós construímos tudo pensando em tirar o seu trabalho, não em te dar mais dores de cabeça. As páginas ficam no ar prontas para receber clientes e a agenda envia os avisos mastigados para você no automático. Qualquer pessoa consegue usar."
   },
   {
-    question: "Como funciona a manutenção ou futuras alterações de preços/textos?",
-    answer: "Como programadores, documentamos todas as seções de forma limpa. Para pequenas alterações eventuais (como mudar uma foto, número de telefone ou tabela de preços), oferecemos planos de manutenção sob demanda super em conta ou pacotes de alteração imediata. É rápido, sem burocracia e direto comigo."
+    question: "Vou ter que pagar alguma mensalidade cara pro site ficar no ar?",
+    answer: "Não! Após o pagamento inicial pelo desenvolvimento da sua página, você não terá mensalidades abusivas. Você pagará apenas uma taxa anual referente à hospedagem e renovação do seu domínio (o nome do seu site), tudo de forma transparente e justa para manter sua estrutura online funcionando com máxima velocidade."
   },
   {
-    question: "O site já vem pronto para eu anunciar no Google e Instagram?",
-    answer: "Sim! Já entregamos a sua landing page com o código estruturado para receber o Meta Pixel (anúncios de Instagram/Facebook) e as tags do Google Ads. Além disso, criamos a página seguindo as regras oficiais de qualidade do Google, o que reduz substancialmente o custo de clique (CPC) dos seus anúncios."
+    question: "E se eu precisar trocar uma foto, preço ou serviço no futuro?",
+    answer: "Os horários e a sua agenda ficam em um painel bem fácil que você acessa até pelo celular para gerenciar o que precisar no seu dia a dia. Já para mudar um texto ou foto na estrutura do site, somos acessíveis: com as nossas pequenas manutenções avulsas, nós fazemos tudo rápido para você."
   }
 ];
 

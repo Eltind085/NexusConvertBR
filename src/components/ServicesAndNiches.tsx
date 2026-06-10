@@ -15,11 +15,8 @@ export default function ServicesAndNiches() {
   });
 
   const handleConsultation = (nicheName: string) => {
-    // Scroll smoothly to ROI calculator or WhatsApp link area
-    const calculator = document.getElementById("simulador-roi");
-    if (calculator) {
-      calculator.scrollIntoView({ behavior: "smooth" });
-    }
+    const text = `Olá, gostaria de saber mais sobre a criação de uma página de vendas para o meu segmento: ${nicheName}`;
+    window.open(`https://wa.me/5585920015464?text=${encodeURIComponent(text)}`, "_blank");
   };
 
   return (
@@ -88,45 +85,54 @@ export default function ServicesAndNiches() {
                 exit={{ opacity: 0, scale: 0.90 }}
                 transition={{ duration: 0.3 }}
                 key={niche.id}
-                className="group relative rounded-2xl border border-white/10 bg-brand-grid/40 overflow-hidden flex flex-col justify-between hover:border-brand-cyan/40 transition-all duration-300 shadow-lg"
+                onClick={() => handleConsultation(niche.name)}
+                className="group relative rounded-2xl border border-white/10 bg-brand-grid/30 hover:bg-brand-grid/60 transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between glow-cyan-hover"
               >
-                {/* Photo Header with ambient overlay */}
-                <div className="relative h-44 overflow-hidden">
+                {/* Card visual showcase */}
+                <div className="relative h-56 overflow-hidden w-full">
+                  {/* Background image */}
                   <img
                     src={niche.imageUrl}
                     alt={niche.name}
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
                   />
+                  
+                  {/* Visual Overlay Gredients */}
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent" />
                   
-                  {/* Floating tags */}
-                  <div className="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur border border-white/10 px-3 py-1 rounded-md">
-                    <span className="font-mono text-[9px] font-bold text-brand-cyan uppercase tracking-wider">
-                      ★ RECOMENDADO
-                    </span>
+                  {/* Absolute Top Badge */}
+                  <div className="absolute top-4 left-4 bg-brand-green text-brand-dark px-3 py-1.5 rounded-lg font-mono text-[10px] font-bold uppercase tracking-wider shadow-md">
+                    {niche.conversionBoost} de Conversão
                   </div>
 
-                  <div className="absolute bottom-4 right-4 bg-brand-green text-brand-dark px-3 py-1 rounded-md font-mono text-xs font-extrabold shadow-sm">
-                    {niche.conversionBoost} de Conversão
+                  <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                    <div>
+                      <span className="text-[10px] font-mono tracking-widest text-brand-green uppercase font-bold block mb-1">
+                        ★ RECOMENDADO
+                      </span>
+                      <h3 className="font-display font-bold text-xl text-white tracking-tight">
+                        {niche.name}
+                      </h3>
+                    </div>
                   </div>
                 </div>
 
-                {/* Info Content Section */}
-                <div className="p-6 flex-grow flex flex-col justify-between">
+                {/* Bottom part / Description and conversion CTA */}
+                <div className="p-6 flex flex-col justify-between flex-grow">
                   <div>
-                    <h3 className="font-display font-bold text-lg text-white group-hover:text-brand-cyan transition duration-200">
-                      {niche.name}
-                    </h3>
-                    
-                    <p className="mt-2 text-xs text-brand-green font-mono">
-                      ▲ {niche.statsLabel}
-                    </p>
+                    {/* Result label showcase */}
+                    <div className="flex items-center gap-2 bg-brand-green/10 border border-brand-green/20 rounded-xl px-3 py-2 mb-4">
+                      <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse shrink-0" />
+                      <span className="text-[11px] font-medium text-brand-green font-mono uppercase tracking-wide">
+                        {niche.statsLabel}
+                      </span>
+                    </div>
 
                     {/* Features checklist */}
-                    <div className="mt-5 space-y-2 border-t border-white/5 pt-4">
-                      <span className="text-[10px] font-mono uppercase tracking-wider text-gray-400 block mb-3 font-semibold">
-                        Recursos Críticos de Conversão:
+                    <div className="space-y-1.5">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-gray-400 block mb-2 font-semibold">
+                        Recursos Focados em Conversão:
                       </span>
                       {niche.recommendedFeatures.map((feat, idx) => (
                         <div key={idx} className="flex items-start gap-2">
@@ -137,13 +143,11 @@ export default function ServicesAndNiches() {
                     </div>
                   </div>
 
-                  {/* Call to action card footer button */}
-                  <button
-                    onClick={() => handleConsultation(niche.name)}
-                    className="mt-6 w-full py-3 bg-white/5 hover:bg-brand-cyan hover:text-brand-dark rounded-xl font-display text-xs font-semibold text-white transition-all duration-200 flex items-center justify-center gap-1.5 uppercase tracking-wide cursor-pointer"
-                  >
-                    Simular Projeto do Meu Negócio <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
+                  {/* Simulated Hover action indicator */}
+                  <div className="mt-5 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-mono font-bold uppercase text-brand-cyan group-hover:text-white transition">
+                    <span>Falar com Especialista</span>
+                    <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1.5 transition" />
+                  </div>
                 </div>
               </motion.div>
             ))}

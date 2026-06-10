@@ -15,10 +15,7 @@ export default function Header() {
   }, []);
 
   const handleCTA = () => {
-    const target = document.getElementById("simulador-roi");
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+    window.open("https://wa.me/5585920015464?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20landing%20pages", "_blank");
   };
 
   const scrollToSection = (id: string) => {
@@ -95,12 +92,6 @@ export default function Header() {
                 Portfólio
               </button>
               <button 
-                onClick={() => scrollToSection("simulador-roi")} 
-                className="text-sm text-gray-400 hover:text-white transition duration-200 cursor-pointer"
-              >
-                Calculadora de ROI
-              </button>
-              <button 
                 onClick={() => scrollToSection("depoimentos")} 
                 className="text-sm text-gray-400 hover:text-white transition duration-200 cursor-pointer"
               >
@@ -121,7 +112,7 @@ export default function Header() {
                 className="relative inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold overflow-hidden rounded-full group cursor-pointer border border-brand-green/30 bg-[#121212] transition-all duration-300 hover:border-brand-green glow-green"
               >
                 <span className="relative z-10 text-white group-hover:text-brand-green transition duration-200 flex items-center gap-1.5 font-display uppercase tracking-wider">
-                  Agendar Estratégia <ArrowUpRight className="w-3.5 h-3.5 text-brand-green" />
+                  Falar no WhatsApp <ArrowUpRight className="w-3.5 h-3.5 text-brand-green" />
                 </span>
               </button>
             </div>
@@ -166,12 +157,6 @@ export default function Header() {
               className="text-left py-2 text-base text-brand-green font-semibold hover:text-white border-b border-white/5 transition"
             >
               Portfólio
-            </button>
-            <button
-              onClick={() => scrollToSection("simulador-roi")}
-              className="text-left py-2 text-base text-gray-300 hover:text-white border-b border-white/5 transition"
-            >
-              Calculadora de ROI
             </button>
             <button
               onClick={() => scrollToSection("depoimentos")}

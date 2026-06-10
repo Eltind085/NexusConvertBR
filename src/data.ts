@@ -278,6 +278,26 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
+    id: "clinica-paixao",
+    title: "Clínica Paixão Saúde e Bem-Estar",
+    niche: "Fisioterapia, Estética e Massoterapia",
+    conversionRate: "+175% de Contatos Reais",
+    resultLabel: "Agenda lotada com tratamentos corporais e bem-estar",
+    description: "Design limpo e objetivo, que foca na tranquilidade e recuperação funcional. Direciona os pacientes diretamente para o agendamento via WhatsApp de maneira muito rápida e prática. (Site que você pode ter hoje mesmo)",
+    imageUrl: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=600",
+    projectUrl: "https://clinicapaixao.vercel.app/",
+    highlights: [
+      "Ambiente relaxante e focado em bem-estar humano",
+      "Lista de tratamentos e abordagens bem explicadas",
+      "Botão flutuante para agendamento que acompanha a tela"
+    ],
+    features: [
+      "Página otimizada para ser ultra rápida mesmo no 4G",
+      "Textos que conversam com a dor e a necessidade de melhora do paciente",
+      "Mapa inteligente embutido diretamente para Waze/Maps"
+    ]
+  },
+  {
     id: "mariana-vasconcellos",
     title: "Clínica de Estética Integrada Facial",
     niche: "Estética Avançada & Dermatologia",
@@ -294,25 +314,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       "Galeria refinada de procedimentos autorizados",
       "Perguntas frequentes que eliminam o medo da aplicação de botox",
       "Botão de agendamento prioritário visível e flutuante"
-    ]
-  },
-  {
-    id: "marcelo-fonseca",
-    title: "Odontologia de Alta Performance",
-    niche: "Implantes Integrados & Próteses Premium",
-    conversionRate: "+175% de Conversão de Tráfego Pago",
-    resultLabel: "Preenchimento total da agenda de procedimentos cirúrgicos",
-    description: "Trabalhamos o design de alto padrão e objeções comuns de medo do cliente. Tudo para facilitar cliques diretamente pro WhatsApp com ticket alto.",
-    imageUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=600",
-    highlights: [
-      "Design de luxo focado em tratamento humanizado",
-      "Prova social com depoimentos marcantes em destaque",
-      "Estabilidade total que garante o recebimento de leads 24h"
-    ],
-    features: [
-      "Seção especial detalhando a qualidade dos materiais importados",
-      "Fluxo simplificado de 2 toques para falar com a recepção",
-      "Mapa interativo de localização integrado com rotas inteligentes"
     ]
   },
   {

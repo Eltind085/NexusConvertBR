@@ -94,7 +94,7 @@ export default function Footer() {
                 <a href="#comunidades" className="hover:text-white transition">Nossos Segmentos</a>
               </li>
               <li>
-                <a href="#simulador-roi" className="hover:text-white transition">Simulador Financeiro ROI</a>
+                <a href="#portfolio" className="hover:text-white transition">Portfólio & Casos</a>
               </li>
               <li>
                 <a href="#depoimentos" className="hover:text-white transition">Resultados Comprovados</a>

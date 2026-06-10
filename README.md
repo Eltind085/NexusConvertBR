@@ -1,20 +1,20 @@
-# Nexus Convert BR 🚀
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-O **Nexus Convert BR** é uma plataforma inovadora focada em desenvolvimento de landing pages de alta conversão para empresários e profissionais de alto ticket. Projetado para quem não tem tempo a perder com soluções genéricas, entrega carregamento ultra-rápido (< 1s), design premium e gatilhos neurovisuais que direcionam leads diretamente para o fechamento via WhatsApp.
+# Run and deploy your AI Studio app
 
-### 🌟 Diferenciais do Projeto
-- **Performance Extrema:** Arquitetura focada em reduzir tempo de tela em branco, o que barra o abandono de possíveis clientes.
-- **Design de Autoridade:** Aspecto visual construído para chancelar os altos tickets de profissionais de destaque na região.
-- **Calculadora de Retorno (ROI):** Simulador interativo que ajuda o visitante a visualizar seu prejuízo atual por não ter um sistema escalável, sendo uma excelente arma de vendas.
-- **Copy sem "Encheção de Linguiça":** Textos diretos ao ponto, criados pensando em empresários que valorizam o próprio tempo.
+This contains everything you need to run your app locally.
 
-### 🛠️ Tecnologias Utilizadas
-- **React.js e Vite:** Base ultra rápida para a aplicação.
-- **TypeScript:** Segurança na estruturação do código.
-- **Tailwind CSS:** Para o design cirúrgico e de fácil manutenção.
-- **Framer Motion & GSAP:** Para as animações refinadas, passando o sentimento de marca premium.
-- **Lucide Icons:** Para toda a iconografia do sistema.
+View your app in AI Studio: https://ai.studio/apps/22db9bba-fad6-4ccc-acb8-4ca53b72a811
+
+## Run Locally
+
+**Prerequisites:**  Node.js
 
 
----
-*Nexus Convert BR - Código Puro, Conversões Reais.*
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

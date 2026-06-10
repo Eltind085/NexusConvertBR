@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 import { ArrowUpRight, Flame, Star, CheckCircle, Shield } from "lucide-react";
 
 export default function Hero() {
-  const handleScrollToCalculator = () => {
-    const target = document.getElementById("simulador-roi");
+  const handleScrollToPortfolio = () => {
+    const target = document.getElementById("comunidades");
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }
@@ -21,15 +21,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur"
+          className="inline-flex flex-col items-center gap-2 mb-8"
         >
-          <span className="flex h-2 w-2 relative">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-green"></span>
-          </span>
-          <span className="text-xs font-mono tracking-wide text-gray-300 uppercase">
-            MÉTODO VALIDADO • ALTA CONVERSÃO 2026
-          </span>
+          <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-brand-green/20 border border-brand-green shadow-[0_0_30px_rgba(57,255,20,0.4)] backdrop-blur">
+            <Flame className="w-5 h-5 text-brand-green animate-pulse" />
+            <span className="text-sm font-display font-extrabold tracking-wide text-white uppercase">
+              OFERTA PROMOCIONAL: ESTRUTURAS A PARTIR DE <span className="text-brand-green text-lg ml-1">R$ 499</span>
+            </span>
+          </div>
         </motion.div>
 
         {/* Dynamic Titles with stagger */}
@@ -40,7 +39,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="font-display font-bold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white leading-[1.1]"
           >
-            Sua Landing Page Premium com <span className="text-glow-green text-brand-green font-extrabold">Agendamento Automático</span>
+            Pare de Perder Clientes no WhatsApp: <br className="hidden sm:block" />Tenha um Site Que <span className="text-glow-green text-brand-green font-extrabold">Vende e Agenda Sozinho</span>
           </motion.h1>
 
           <motion.p
@@ -49,7 +48,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-6 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto"
           >
-            Aceleramos seu faturamento com páginas rápidas de alta conversão. Transforme cliques em clientes qualificados direto no seu WhatsApp.
+            Estruturamos Landing Pages estratégicas com sistemas de agendamento 100% automatizados. Elimine o trabalho manual, filtre curiosos e receba apenas clientes prontos para comprar, 24 horas por dia.
           </motion.p>
         </div>
 
@@ -58,28 +57,35 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+          className="flex flex-col items-center gap-6 mb-16"
         >
-          <button
-            onClick={handleScrollToCalculator}
-            className="w-full sm:w-auto relative group inline-flex items-center justify-center px-8 py-4 font-display font-bold uppercase tracking-wider text-xs rounded-full bg-brand-green text-brand-dark transition-all duration-300 transform hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(57,255,20,0.4)] cursor-pointer"
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              Agendar Minha Estratégia <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </span>
-            <span className="absolute -inset-1 rounded-full bg-brand-green opacity-30 blur-sm animate-pulse"></span>
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+            <button
+              onClick={() => window.open('https://wa.me/5585920015464?text=Olá,%20gostaria%20de%20automatizar%20minhas%20vendas%20com%20um%20sistema%20de%20agendamento', '_blank')}
+              className="w-full sm:w-auto relative group inline-flex items-center justify-center px-8 py-4 font-display font-bold uppercase tracking-wider text-xs rounded-full bg-brand-green text-brand-dark transition-all duration-300 transform hover:scale-[1.03] hover:shadow-[0_0_30px_rgba(57,255,20,0.4)] cursor-pointer"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                 Quero Automatizar Minhas Vendas <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </span>
+              <span className="absolute -inset-1 rounded-full bg-brand-green opacity-30 blur-sm animate-pulse"></span>
+            </button>
 
-          <a
-            href="#comunidades"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById("comunidades")?.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 font-display font-medium text-xs uppercase tracking-wider text-white border border-white/10 rounded-full hover:border-brand-cyan hover:bg-white/5 transition-all duration-200"
-          >
-            Ver Modelos por Segmento
-          </a>
+            <a
+              href="#comunidades"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("comunidades")?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 font-display font-medium text-xs uppercase tracking-wider text-white border border-white/10 rounded-full hover:border-brand-cyan hover:bg-white/5 transition-all duration-200"
+            >
+              Ver Exemplos Reais
+            </a>
+          </div>
+          
+          <div className="flex items-center gap-2 justify-center py-1.5 px-4 rounded-full border border-white/5 bg-white/5 backdrop-blur-sm shadow-sm inline-block">
+             <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+             <span className="text-[11px] font-mono text-gray-300 tracking-wider font-semibold uppercase">Desenvolvimento hiper-focado com <strong className="text-white text-xs font-bold">Entrega Ágil</strong></span>
+          </div>
         </motion.div>
 
         {/* Floating elements / Performance mock container */}
