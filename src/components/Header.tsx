@@ -66,7 +66,7 @@ export default function Header() {
                   NEXUS <span className="text-brand-cyan">CONVERT</span> BR
                 </span>
                 <span className="text-[9px] font-mono tracking-[0.25em] text-brand-green uppercase font-semibold">
-                  Engenharia de Conversão
+                  Sites Feitos Para Vender
                 </span>
               </div>
             </div>

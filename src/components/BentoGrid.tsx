@@ -28,7 +28,7 @@ export default function BentoGrid() {
             AUTOMAÇÃO E VENDAS
           </span>
           <h2 className="mt-6 font-display font-bold text-3xl sm:text-5xl text-white tracking-tight leading-tight">
-            Engenharia de Conversão para <span className="text-brand-green">Multiplicar seu Faturamento</span>
+            Um Site Feito para <span className="text-brand-green">Vender e Agendar por Você</span>
           </h2>
           <p className="mt-4 text-base text-gray-400">
             Diga adeus a clientes que perguntam o preço e somem. Entregamos uma máquina de vendas pronta para agendar os seus serviços automaticamente.

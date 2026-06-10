@@ -1,6 +1,6 @@
 {
   "name": "Nexus Convert BR",
-  "description": "Engenharia de Landing Pages de alta conversão para alavancar pequenos e médios negócios locais.",
+  "description": "Criação de sites incríveis e agendas automáticas para você lotar a sua agenda.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

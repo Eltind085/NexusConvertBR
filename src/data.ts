@@ -279,7 +279,7 @@ export const TESTIMONIALS: Testimonial[] = [
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: "clinica-paixao",
-    title: "Clínica Paixão Saúde e Bem-Estar",
+    title: "Clínica Paixão",
     niche: "Fisioterapia, Estética e Massoterapia",
     conversionRate: "+175% de Contatos Reais",
     resultLabel: "Agenda lotada com tratamentos corporais e bem-estar",
