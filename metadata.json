@@ -1,0 +1,6 @@
+{
+  "name": "Nexus Convert BR",
+  "description": "Landing page de alta conversão para serviços de desenvolvimento web focados em vendas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
